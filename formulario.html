@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="formulario.css">
+</head>
+<!-- Cabecera -->
+<header class="navbar">
+    <div class="logo">
+        <a href="#Inicio">
+            <img src="img/logo.jpg" alt="Logo maquillaje"/>
+        </a>
+    </div>
+    <nav>
+        <ul class="nav-links">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="formulario.html">Regístrate</a></li>
+            <li><a href="login.html">Iniciar Sesión</a></li>
+            <li><a href="nosotros.html">Sobre Nosotros</a></li>
+        </ul>
+    </nav>
+    <div class="cart-icon">
+        <img src="img/carrito.jpg" alt="Carrito de compras"/>
+    </div>
+</header>
+
+<body>
+    <form class="signup-section" method="POST">
+        <h3>Datos Personales</h3>
+    
+        <input type="text" name="nombre" placeholder="Nombre completo" required>
+        <label for="birthdate">Fecha de nacimiento:</label>
+        <input
+            type="date"
+            id="birthdate"
+            name="fecha_nacimiento"
+            required
+            min="1900-01-01"
+            max="2023-12-31"
+        />
+        <input type="email" name="email" placeholder="Correo electrónico" required>
+        <input type="password" name="password" placeholder="Contraseña" required>
+        <input type="password" name="confirmarPassword" placeholder="Confirmar contraseña" required>
+    
+        <h3>Dirección de Envío</h3>
+    
+        <input type="text" name="direccion" placeholder="Calle y número" required>
+        <input type="text" name="ciudad" placeholder="Ciudad" required>
+        <input type="text" name="provincia" placeholder="Provincia / Estado" required>
+        <input type="text" name="cp" placeholder="Código Postal" required>
+        <input type="text" name="pais" placeholder="País" required>
+        <input type="tel" name="telefono" placeholder="Teléfono de contacto" required> 
+    <label>
+       <input type="checkbox" name="terminos" required><p>Acepto los <a href="#">términos y condiciones</a></p>
+    </label>
+        <button type="submit" class="btn-primary">Crear Cuenta</button>
+    </form>
+    
+ <!-- Footer -->
+ <footer>
+    <div class="footer-content">
+        <div class="footer-links">
+            <div class="link-column">
+                <h4>Empresa</h4>
+                <ul>
+                    <li><a href="#">Sobre nosotros</a></li>
+                    <li><a href="#">Términos y condiciones</a></li>
+                    <li><a href="#">Política de privacidad</a></li>
+                </ul>
+            </div>
+            <div class="link-column">
+                <h4>Soporte</h4>
+                <ul>
+                    <li><a href="#">Contacto</a></li>
+                    <li><a href="#">Preguntas frecuentes</a></li>
+                    <li><a href="#">Guía de tallas</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="social-icons">
+            <a href="#"><img src="img/insta.jpg" alt="Instagram"></a>
+            <a href="#"><img src="img/facebook.jpg" alt="Facebook"></a>
+        </div>
+        <div class="footer-logo">
+            <img src="img/logo.jpg" alt="Logo Makeup Store"/>
+            <p>Tu tienda de maquillaje confiable</p>
+        </div>
+        <div class="copyright" style="text-align: center;">
+            <p>&copy; 2025 Blush Rush. Todos los derechos reservados.</p>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
